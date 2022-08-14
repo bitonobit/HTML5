@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html lang="es" class="no-js">
+    <head>
+      <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Imágenes</title>
+        <meta name="keywords" content="HTML5, CSS3, Javascript">
+        <meta name="author" content="Candy González">
+<body>
+    <h1 style="text-align: center;"> Imágenes </h1>
+    <!-- Sintaxis: <img src="nombreimagen.jpg" alt="Descripción de la imagen"> -->
+    <h2> Abrir imágenes desde carpetas</h2>
+    <img src="img/html5.jpg" alt="Icono de HTML5" width="150" height="200">
+    <img src="img/html5.jpg" alt="Icono de HTML5" style="width:150px;height:200px;">
+    <h2>Abrir una imagen desde una url</h2>
+    <img src="https://img2.rtve.es/im/5119026/?w=900" alt="El derecho al voto de las personas con discapacidad intelectual">
+    <h2>Abrir un gif animado</h2>
+    <img src="img/aplausos.gif" alt="Minions aplaudiendo">
+    
+    <h2>Crear un mapa de imagen</h2>
+    <!-- El atributo usemap crear una relación entre la imagen y el mapa de imagen. -->
+    <img src="img/mapa.jpg" alt="Mapa del tesoro" usemap="#mimapa" >
+    <!-- La etiqueta map crea un mapa de imagen y se vincula a la imagen mediante el 
+        name atributo. El atributo name debe tener el mismo valor que el atributo usemap. -->
+    <map name="mimapa">
+        <!-- coordenadas del centro del círculo vertical, horizontal y radio del círculo -->
+        <area shape="circle" coords="480,180,70" alt="Coches" href="https://images1.autocasion.com/actualidad/wp-content/uploads/2017/08/Coches-para-ir-a-la-monta%C3%B1a-1.jpeg">
+        <area shape="circle" coords="315,105,70" alt="Sombreros" href="https://cdn.shopify.com/s/files/1/0495/5309/products/2_2641014b-1a0a-4ff2-b628-bfefc9bfb271.jpg?v=1486518572">
+        <area shape="circle" coords="150,180,70" alt="Perros" href="https://www.ecestaticos.com/imagestatic/clipping/797/767/79776773aab795837282c7d4947abaf7/por-que-nos-parece-que-los-perros-sonrien-una-historia-de-30-000-anos.jpg?mtime=1558346791">
+        <area shape="rect" coords="220,260,400,410" alt="Mapa" href="https://upload.wikimedia.org/wikipedia/commons/8/83/Teide2007.jpg">
+    </map>
+    <!-- Una forma de determinr las coordenadas es abriendo la image con el paint y poner la regla y la cuadricula -->
+    <!-- <picture> contiene varios <source> cada uno se refiere a diferentes fuentes de imagen. 
+      De esta manera, el navegador puede elegir la imagen que mejor se adapte a la vista y/o 
+      dispositivo actual. Cada <source>  tiene atributos que describen cuándo su imagen es la 
+      más adecuada. -->
+    <picture>
+        <source media="(min-width: 1024px)" srcset="img/c1.jpg" >
+        <source media="(min-width: 640px)" srcset="img/c2.jpg" >
+        <source media="(min-width: 480px)" srcset="img/c3.jpg" >
+        <img src="img/c4.jpg" style="width:auto;" >
+    </picture>
+    <h2>Imagen con pie</h2>
+    <figure>
+        <!--En HTML5, una imagen y un subtítulo se pueden agrupar con la etiqueta <figure> y con la etiqueta <figcaption> se define el pie de la imagen, el propósito de un pie es añadir una explicación a una imagen-->
+        <img src="img/lenguajes.jpg" alt="Nube de palabras en diferentes colores, con nombres de lrnguajes de programación como javascript, html, visual basic, sql y más" width="304" height="228" align="center">
+        <figcaption>Fig1. - Lenguajes de Programación.</figcaption>
+    </figure>
+
+</body>
+</html>

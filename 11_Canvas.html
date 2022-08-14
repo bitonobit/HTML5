@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos</title>
+</head>
+<body>
+  <!-- <canvas> Es un contenedor para hacer gráficos con código js -->
+    
+    <canvas id="miCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    </canvas>
+    <script>
+      var dibujo = document.getElementById("miCanvas");
+      var linea = dibujo.getContext("2d");
+      linea.moveTo(0,0);
+      linea.lineTo(200,100);
+      linea.stroke();
+    </script>
+
+    <!-- Dibuja un círculo -->
+    <canvas id="miCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+      Tu navegador no soporta la etiqueta canvas de HTML
+    </canvas>
+    <script>
+      var dibujo2 = document.getElementById("miCanvas2");
+      var circulo = dibujo2.getContext("2d");
+      circulo.beginPath();
+      circulo.arc(95,50,40,0,2*Math.PI);
+      circulo.stroke();
+    </script> 
+
+</body>
+</html>
+<!-- Saber más: Tutorial de Canvas: https://www.w3schools.com/graphics/canvas_intro.asp  -->

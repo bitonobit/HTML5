@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario en HTML-->
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ejemplo de HTML5">
+	<meta name="keywords" content="HTML5, CSS3, Javascript">
+	<meta name="author" content="Candy González">
+	<title>Atributos, Color y Tipografía</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<!-- Atributo de estilo y propiedad color de fondo -->
+<body style="background-color:powderblue;">
+	<header>
+		<!-- Atributo de estilo y propiedad de tamaño de la fuente -->
+		<h1 style="font-size:60px;">Título principal del sitio web </h1>
+		
+		<!-- Sintaxis: <NombreEtiqueta style="propiedad:valor;"> -->
+	</header>
+
+	<section>
+		<!--En esta sección va la Información Principal-->
+		<h1 style="text-align:center;">Título de la sección </h1>
+		<section>     
+			<h1>Sección 1.1 <small> Subtítulo </small></h1>     
+			<p title="Con título" style="color:red">Esto es un párrafo."Lorem ipsum dolor sit amet, consectetur 
+				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+				laborum."</p>
+				<p style="border:2px solid tomato;"> Esto es un párrafo con borde sólido color tomato</p>
+				<p style="background-color:tomato;">Un párrafo con fondo color tomato, usando el color tipo o nombre del color</p>
+				<p style="background-color:rgb(255, 99, 71);">2º forma de poner el mismo color de fondo, usando la fórmula rgb ( rojo, verde , azul )</p>
+				<p style="background-color:#ff6347;">3º forma de poner el mismo color</p>
+				<p style="background-color:hsl(9, 100%, 64%);">4º forma de poner el mismo color</p>
+
+				<p style="background-color:rgba(255, 99, 71, 0.5);">5º forma de poner el mismo color, pero agregando transpareccia</p>
+				<p style="background-color:hsla(9, 100%, 64%, 0.5);">6º forma de poner el mismo color, pero agregando transpareccia</p>
+				
+			<a href="https://www.w3schools.com/colors/colors_names.asp"> Más información sobre los colores.. </a>
+		</section>
+
+		<section>     
+			<h1 title="soy una etiqueta">Sección 1.2</h1>
+			 <!--El atributo title muestra una etiqueta cuando pasa el ratón-->
+			<p style="font-family:verdana;">Esto es un párrafo.<em>Cursiva</em> dolor sit amet, consectetur adipiscing 
+				elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+				nostrud exercitation ullamco laboris nisi ut aliquip ex ea <strong>Negrita</strong>. Duis aute 
+				irure <ins>Subrayado</ins> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+				anim id est laborum. <small>Pequeña</small> sint occaecat cupidatat non proident, sunt in culpa qui officia 
+				deserunt mollit anim id est laborum. <q> Entre comillas </q> cupidatat non proident, sunt in culpa 
+				qui officia deserunt mollit anim id est laborum.</p>
+			<p style="font-family:Arial; text-align:center;">Párrafo centrado</p>
+			<blockquote  cite="https://www.w3schools.com/html/html_styles.asp"> Cita de otra fuente ... se utiliza para indica
+			el autor del contenido colocado aqui</blockquote>
+			<abbr title="Persona con Discapacidad Intelectul">PDI</abbr>
+		</section>
+		<aside>
+			<!-- Esta es una columna o sección que normalmente contiene datos relacionados con la información principal
+				 pero que no son relevantes o igual de importantes.-->
+			<p style="font-size:160%;">Esto es un  párrafo."Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt. <mark>Resaltado</mark> enim ad minim veniam, <sub>Subíndice</sub> 
+				quis nostrud  <sup>Superíndice</sup> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+				sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				Abreviaturas: <abbr title="Teléfono">Tlf.</abbr> por ejemplo</p>
+			<address>
+				Datos de Contacto: 
+				Calle Tomás Zerolo, 12 <br> 
+				La Orotava<br>
+				Tenerife
+			</address>
+			<hr>
+		</aside> 
+		<pre style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+				Yo la amé, y era de otro, que también la quería.
+				Perdónala Señor, porque la culpa es mía.
+				Después de haber besado sus cabellos de trigo,
+				nada importa la culpa, pues no importa el castigo.
+		
+		</pre>
+		<a href="https://es.lipsum.com/">Generador de texto</a>
+		<br>
+		<img src="img/Las_Meninas.jpg" width="220" height="277" alt="Las Meninas">
+		<!-- La etiqueta <cite> define el título de una obra -->
+		<p><cite>Las Meninas</cite> por Diego Velázquez. Pintado en 1656.</p> 
+		<img src="img/Estructura-html4-html5.png" align="center" >
+		<hr>	
+		<a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document">Más sobre las Secciones en HTML5</a>
+		
+	</section>
+	
+	<footer>
+		<!-- Esto es el pie de página -->
+		<p>(c) 2018 Candy González</p>
+		
+	</footer>
+</body>
+</html>

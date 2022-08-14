@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listas y Tablas</title>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Esta etiqueta meta es un un método para que los diseñadores web tengan control sobre el área de visualización. El elemento de visualización da las instrucciones de su navegador sobre cómo controlar las dimensiones y la escala de la página.-->
+    <meta name="description" content="Clases de HTML5">
+    <meta name="keywords" content="HTML5">
+    <meta name="author" content="Candy González">
+    <div id="logo">Logo</div>
+  </head>
+  <body>
+    <header>
+    <h1 style="font-size:60px; text-align:center;">Título principal del sitio web </h1>
+  </header>
+  <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Fotos</a></li>
+        <li><a href="#">Vídeos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+  </nav>  
+  <section>
+
+    <h2>Lista no ordenda</h2>
+    <ul style="list-style-type:circle">
+      <li>Leche</li>
+      <li>Café</li>
+      <li>Azúcar</li>
+    </ul>
+
+    <h2>Lista ordenda con números</h2>
+    <ol>
+      <li>Elemento 01</li>
+      <li>Elemento 02</li>
+      <li>Elemento 03</li>
+    </ol>
+
+    <h2>Lista ordenda con letras</h2>
+    <ol type="a">
+      <li>Elemento 01</li>
+      <li>Elemento 02</li>
+      <li>Elemento 03</li>
+    </ol>
+
+    <h2>Lista descriptiva</h2>
+      <dl>
+        <dt>Café</dt>
+        <dd>- Negro</dd>
+        <dd>- Con Leche</dd>
+        <dd>- Cortado Natural</dd>
+        <dd>- Cortado leche y leche</dd>
+        <dt>Te</dt>
+        <dd>- Negro</dd>
+        <dd>- Rojo</dd>
+        <dd>- Verde</dd>
+      </dl>
+
+      <h2>Listas anidadas</h2>
+        <ul>
+          <li>Café</li>
+          <li>Infusiones 
+            <ul>
+              <li>Te negro</li>
+              <li>Te rojo</li>
+              <li>Te verde</li>
+            </ul>
+          </li>
+          <li>Zumos</li>
+            <ul>
+              <li>Naranja</li>
+              <li>Fresa</li>
+            </ul>
+        </ul>
+
+
+        
+
+    <h2>Tabla sencilla</h2>
+    <table border="1">
+      <tr> <!-- fila -->
+        <th>título 01</th>
+        <th>título 02</th>
+        <th>título 03</th>
+      </tr>
+      <tr>
+        <td>celda_1</td>
+        <td>celda_2</td>
+        <td>celda_3</td>
+      </tr>
+      <tr>
+        <td>celda_1</td>
+        <td>celda_2</td>
+        <td>celda_3</td>
+      </tr>
+    </table>
+
+    <h2>Tabla con encabezado, cuerpo y pie</h2>
+    <table border="3" style="width:60%">
+      <caption>Gastos Mensuales</caption>
+      <!-- Título de la tabla -->
+      <colgroup>
+          <col span="2" style="background-color:#CE5937;">
+          <col style="background-color:#ffffff">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Mes</th>
+          <th>Gastos</th>
+          <th>Descuentos</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr >
+          <td>Total</td>
+          <td>200</td>
+          <td>20</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Enero</td>
+          <td>100</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Febrero</td>
+          <td>80</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Marzo</td>
+          <td>20</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2>Tabla con rowspan</h2>
+    <table border="1" style="width:50%">
+      <tr>
+        <th>Nombre:</th>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Teléfono:</th>
+        <td>55577854</td>
+      </tr>
+      <tr>
+        <td>55577855</td>
+      </tr>
+    </table>
+    <section>     
+      <a href="https://www.w3schools.com/html/html_table_borders.asp">más sobre tablas</a>
+    </section> 
+    <aside>
+    <header> Enlaces de interes </header> 
+    <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Elementos semánticos en HTML5</a>  
+    <a href="https://www.w3schools.com/html/html_entities.asp">Entidades</a>
+    </aside> 
+  </section>
+
+
+  <style>  
+    .th, .td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #DDD;
+    }
+    
+    .tr:hover {background-color: #D6EEEE;}
+    </style>
+    </head>
+    <body>
+    
+    <h2>Tabla animada</h2>
+    <p>Un efecto al pasar el ratón por encima.</p>
+    
+    <table style="border-collapse: collapse;
+    width: 100%;">
+      <tr class="tr">
+        <th class="th">Nombre</th>
+        <th class="th">Apellido</th>
+        <th class="th">Nota</th>
+      </tr>
+      <tr class="tr">
+        <td class="td">Javier</td>
+        <td class="td">Laya</td>
+        <td class="td">10</td>
+      </tr>
+      <tr class="tr">
+        <td class="td">Sebastián</td>
+        <td class="td">González</td>
+        <td class="td">10</td>
+      </tr>
+      <tr class="tr">
+        <td class="td">César</td>
+        <td class="td">Montes</td>
+        <td class="td">6</td>
+      </tr>
+    </table>
+    
+  
+  <footer>
+    <p>&copy; 2018 Candy González</p>
+  </footer>
+  </body>
+</html>

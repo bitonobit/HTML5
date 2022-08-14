@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un formulario">
+    <meta name="keywords" content="cafe, chocolate, te">
+    <meta name="author" content="Candy González">
+  <title>Formularios</title>
+  <div id="logo"> <img src="img/logo.png" width="150px"> </div>
+</head>
+
+<body style="background:#F0AC3A;">
+  <div style="background: white; border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px; width: 70%; margin: auto;">
+    <h2 style="text-align:center;">Cafetería el Sueño de Lucía</h2>
+    <div style="padding: 1em;">
+      <form action="" method="post" name="miFormulario" autocomplete="on" accept-charset="utf-8">
+      <p> <input type="checkbox" name="pan" id=""> Pan (6 unidades por bolsa) <strong> 4,50€</strong></p>
+      <label>Cantidad:</label>
+			<select name="cantidad">
+  				<option>1</option>
+  				<option>2</option>
+  				<option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+			</select>
+      <p> <input type="checkbox" name="pan" id=""> Donas (12 unidades por caja) <strong> 7,50€</strong></p>
+      <label>Cantidad:</label>
+			<select name="cantidad">
+  				<option>1</option>
+  				<option>2</option>
+  				<option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+			</select>
+      <p> <input type="checkbox" name="pan" id=""> Galletas (25 unidades por caja) <strong> 12,75€</strong></p>
+      <label>Cantidad:</label>
+			<select name="cantidad">
+  				<option>1</option>
+  				<option>2</option>
+  				<option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+			</select>
+      <label>Sabor:</label>
+			<select name="cantidad">
+  				<option>Chocolate</option>
+  				<option>Moka</option>
+  				<option>Fresa</option>
+          <option>Limón</option>
+          <option>Café</option>
+          <option>Canela</option>
+			</select>
+
+      <p>Método de pago:</p>
+			<input type="radio" name="h" value="M"> Efectivo <br>
+    		<input type="radio" name="f" value="F"> Tarjeta de crédito <br>
+    		<input type="radio" name="n" value="N"> Tarjeta de débito <br>
+        <hr>
+        <div>
+          <label for="date">Fecha</label>
+          <input id="date" type="date">
+        </div><br>
+        <div>
+          <label for="datetime">Fecha y hora local</label>
+          <input id="datetime" type="datetime-local">
+        </div><br>
+        <div>
+          <label for="month">Mes</label>
+          <input id="month" type="month">
+        </div><br>
+        <div>
+          <label for="week">Semana</label>
+          <input id="week" type="week">
+        </div><br>
+        <div>
+          <label for="time">Hora</label>
+          <input id="time" type="time">
+        </div>
+
+
+
+      </form>
+    </div>
+</div>
+</body>
+</html>
+<!-- https://www.w3schools.com/tags/att_form_accept_charset.asp 
+
+https://www.w3schools.com/tags/att_form_enctype.asp-->

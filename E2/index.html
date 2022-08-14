@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Candy González">
+	<title>Formulario de Registro</title>
+	<style type="text/css">
+		div {
+			width: 60%;
+			margin-left: 20%;
+		}
+		h1 {
+			text-align: center;
+		}
+		label, p {
+			font-family: verdana;
+			font-size: 14px;
+		}
+		#p1 {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Formulario de Registro</h1>
+	<div>
+	<form>
+		<fieldset>
+			<legend>Datos de usuario</legend>
+			<label>Email:<input type="email" name="correo" size="40"></label><br><br>
+			<label>Usuario: <input type="text" name="usuario" minlength="5" size="36"></label> <br><br>
+			<label>Contraseña: <input type="password" name="password" minlength="8" maxlength="4" size="32"></label>
+			<p><em> La contraseña debe contener entre 4 y 6 caracteres </em></p>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label>Nombre:</label>
+			<input type="text" name="nombre"><span id="p1">*</span> <br><br>
+			<label>Apellido:</label>
+			<input type="text" name="apellido"><span id="p1">*</span> <br> <br>
+			<label>Fecha de nacimiento:</label>
+			<input type="date" name="fn"><br>
+			<label>Sexo:</label> <br>
+			<input type="radio" name="h" value="M"> Masculino <br>
+    		<input type="radio" name="f" value="F"> Femenino <br>
+    		<input type="radio" name="n" value="N"> Prefiero no decirlo <br>
+		</fieldset>
+		<fieldset>
+			<legend>Datos socioeconómicos</legend>
+			<label>Dirección:</label><br>
+			<textarea name="texto" rows="4" cols="20">	
+			</textarea> 	<br><br>
+			<label>Móvil:</label>
+			<input type="text" name="apellido"> <br><br>
+			<label>Tarjeta de crédito:</label>
+			<select name="tc">
+  				<option>Visa</option>
+  				<option>MásterCard</option>
+  				<option>American Express</option>
+			</select>
+			<label>Número: <input type="text" name="numero"> </label> <br>
+			
+		</fieldset>
+		<p>
+		<input type="checkbox" name="casilla" checked> Acepta nuestra política de privacidad
+		</p>
+		<hr>	
+		<input type="submit" value="Enviar"><br>
+
+	</form>
+	</div>
+</body>
+</html>
